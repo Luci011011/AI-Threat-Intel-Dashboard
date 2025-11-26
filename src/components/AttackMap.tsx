@@ -69,3 +69,4 @@ const AttackMap: React.FC<AttackMapProps> = ({ locations }) => {
 
 export default AttackMap;
 
+

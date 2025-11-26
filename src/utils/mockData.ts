@@ -187,3 +187,4 @@ export const mitreTactics = [
   { id: 'TA0040', name: 'Impact', description: 'The adversary is trying to manipulate, interrupt, or destroy systems and data.' },
 ];
 
+
