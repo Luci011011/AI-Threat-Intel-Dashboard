@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-dark text-white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+
+  * {
+    @apply border-cyber-gray;
+  }
+}
+
+@layer components {
+  .cyber-card {
+    @apply bg-cyber-gray rounded-lg border border-cyber-gray-light p-6 shadow-lg;
+  }
+
+  .cyber-button {
+    @apply px-4 py-2 rounded-lg font-semibold transition-all duration-200;
+  }
+
+  .cyber-button-primary {
+    @apply cyber-button bg-cyber-blue text-cyber-dark hover:bg-cyber-blue-dark;
+  }
+
+  .cyber-button-danger {
+    @apply cyber-button bg-cyber-red text-white hover:bg-cyber-red-dark;
+  }
+
+  .cyber-input {
+    @apply bg-cyber-gray border border-cyber-gray-light rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyber-blue;
+  }
+
+  .neon-glow-blue {
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;
+  }
+
+  .neon-glow-red {
+    box-shadow: 0 0 10px #ff006e, 0 0 20px #ff006e, 0 0 30px #ff006e;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-cyber-gray;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-cyber-blue rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyber-blue-dark;
+  }
+}
+
